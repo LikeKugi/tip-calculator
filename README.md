@@ -67,4 +67,8 @@ I wanted some practice in writing tests
 
 ## Acknowledgments
 
+I've just completed a front-end coding challenge from @frontendmentor! 🎉
 
+You can see my solution here: https://www.frontendmentor.io/solutions/react-redux-vite-N_t6ZnbFlV
+
+Any suggestions on how I can improve are welcome!
