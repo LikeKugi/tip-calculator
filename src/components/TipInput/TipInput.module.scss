@@ -8,18 +8,18 @@
     align-items: center;
   }
   &__error {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--color-error);
   }
   &__label {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--color-dark);
   }
   &__input {
     min-width: 0;
     width: 100%;
     padding: 1rem;
-    border: none;
+    border: 2px solid transparent;
     border-radius: var(--brad-small);
     color: var(--color-very-dark);
     background-color: var(--color-very-light);

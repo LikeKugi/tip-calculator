@@ -1,6 +1,7 @@
 import { ChangeEvent, FC, useState } from 'react';
 import Button from '@/components/Button/Button';
 import styles from './TipNumber.module.scss';
+import { selectTip, setTip, useAppDispatch, useAppSelector } from '@/store';
 
 const tips = [
   { value: 5, title: '5%' },
@@ -15,9 +16,13 @@ interface ITipNumberProps {
 }
 
 const TipNumber: FC<ITipNumberProps> = ({ label }) => {
-
-  const [current, setCurrent] = useState<number | ''>('');
+  const dispatch = useAppDispatch();
+  const current = useAppSelector(selectTip);
   const [custom, setCustom] = useState<number | ''>('');
+
+  const setCurrent = (arg: number | '') => {
+    dispatch(setTip(arg || 0))
+  }
 
   const handleSetCurrent = (value: number) => {
     if (value === current) {

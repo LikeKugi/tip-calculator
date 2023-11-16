@@ -14,7 +14,7 @@ const TipInfo: FC<ITipInfoProps> = ({title, price}): JSX.Element => {
         <h3 className={styles.info__subtitle}>/ person</h3>
       </div>
       <span className={styles.info__price}>
-        $ {price}
+        ${price}
       </span>
     </div>
   );

@@ -31,7 +31,7 @@ const TipInput: FC<ITipInputProps> = ({inputRef, label, error, variant, ...props
   return (
     <div className={styles.box}>
       <div className={styles.box__description}>
-        <label htmlFor={inputId}>{label}</label> {error && <span>{error}</span>}
+        <label className={styles.box__label} htmlFor={inputId}>{label}</label> {error && <span className={styles.box__error}>{error}</span>}
       </div>
         <input className={makeClass(variant, !!error)} ref={inputRef} {...props} id={inputId}/>
     </div>
