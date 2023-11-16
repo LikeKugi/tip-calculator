@@ -28,8 +28,8 @@ const TipTotal = (): JSX.Element => {
   return (
     <div className={styles.total}>
       <div className={styles.total__info}>
-        <TipInfo title="Tip Amount" price={amount.toFixed(2).toString()} />
-        <TipInfo title="Total" price={total.toFixed(2).toString()} />
+        <TipInfo title="Tip Amount" price={amount.toFixed(2).toString()} role={'amount'}/>
+        <TipInfo title="Total" price={total.toFixed(2).toString()} role="total"/>
       </div>
       <Button variant="light" onClick={() => dispatch(resetTips())}>Reset</Button>
     </div>

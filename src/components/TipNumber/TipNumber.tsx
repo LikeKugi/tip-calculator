@@ -21,22 +21,22 @@ const TipNumber: FC<ITipNumberProps> = ({ label }) => {
   const [custom, setCustom] = useState<number | ''>('');
 
   const setCurrent = (arg: number | '') => {
-    dispatch(setTip(arg || 0))
-  }
+    dispatch(setTip(arg || 0));
+  };
 
   const handleSetCurrent = (value: number) => {
     if (value === current) {
       setCurrent('');
-      setCustom('')
+      setCustom('');
     } else {
       setCurrent(value);
-      setCustom('')
+      setCustom('');
     }
   };
 
   const handleCustomTip = (e: ChangeEvent<HTMLInputElement>) => {
     e.preventDefault();
-    const value = +e.target.value
+    const value = +e.target.value;
     if (isFinite(value) && value > 0) {
       setCustom(value);
       setCurrent(value);
@@ -44,15 +44,17 @@ const TipNumber: FC<ITipNumberProps> = ({ label }) => {
       setCurrent('');
       setCustom('');
     }
-  }
+  };
 
   return (
     <div className={styles.box}>
       <p className={styles.box__title}>{label}</p>
       <div className={styles.box__grid}>
-        {tips.map(tip => <Button variant={current === tip.value ? 'light' : 'dark'}
+        {tips.map(tip => <Button key={tip.value}
+                                 variant={current === tip.value ? 'light' : 'dark'}
                                  onClick={() => handleSetCurrent(tip.value)}>{tip.title}</Button>)}
-        <input className={styles.box__input} type={'number'}
+        <input className={styles.box__input}
+               type={'number'}
                placeholder={'custom'}
                min={0}
                value={custom}
