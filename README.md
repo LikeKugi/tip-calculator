@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub Repo](https://github.com/LikeKugi/tip-calculator)
+- Live Site URL: [Vercel Deployment](https://tip-calculator-rouge-kappa.vercel.app/)
 
 ## My process
 
@@ -47,7 +47,7 @@ Users should be able to:
 
 ### What I learned
 
-
+I wanted some practice in writing tests
 
 ### Continued development
 
@@ -58,6 +58,7 @@ Users should be able to:
 - [svg in input](https://stackoverflow.com/questions/40808493/how-to-add-a-svg-icon-within-an-input) - This is an amazing article which helped me to place icons like ::before. But i didn't do it <3
 - [hide buttons](https://stackoverflow.com/questions/3790935/can-i-hide-the-html5-number-input-s-spin-box) - This topic helped me to hide arrows in inputs
 - [input responsive](https://stackoverflow.com/questions/56545830/how-can-i-make-an-input-element-respect-the-dimensions-of-a-grid-container) - This topic helped me to make my inputs responsive
+- [tests with redux](https://www.freecodecamp.org/news/how-to-write-unit-tests-in-react-redux/) this article helped me with tests
 
 ## Author
 
@@ -66,8 +67,4 @@ Users should be able to:
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got
-some inspiration from someone else's solution. This is the perfect place to give them some credit.
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel
-free to delete this section entirely.**
