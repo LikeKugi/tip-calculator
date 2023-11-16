@@ -1,9 +1,17 @@
+import RootLayout from '@/layout/RootLayout/RootLayout';
+import Heading from '@/components/Heading/Heading';
+import TipBox from '@/layout/TipBox/TipBox';
 
 function App() {
 
   return (
     <>
-      <h1>tips calculator</h1>
+      <RootLayout>
+        <Heading title="spli">
+          <br/>tter
+        </Heading>
+        <TipBox />
+      </RootLayout>
     </>
   )
 }

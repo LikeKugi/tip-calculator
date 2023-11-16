@@ -1,0 +1,26 @@
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: var(--brad);
+
+  &__text {
+    max-width: max-content;
+  }
+  &__title {
+    font-size: 1rem;
+    color: var(--color-white);
+    line-height: 1;
+    margin-block: 0.5rem;
+  }
+  &__subtitle {
+    font-size: 1rem;
+    color: var(--color-dark);
+    line-height: 1;
+    margin-block: 0.5rem;
+  }
+  &__price {
+    font-size: 3.6rem;
+    color: var(--color-primary);
+  }
+}

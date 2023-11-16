@@ -1,0 +1,67 @@
+.box {
+  width: 100%;
+  max-width: 42rem;
+  &__description {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__error {
+    font-size: 1.5rem;
+    color: var(--color-error);
+  }
+  &__label {
+    font-size: 1.5rem;
+    color: var(--color-dark);
+  }
+  &__input {
+    min-width: 0;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: var(--brad-small);
+    color: var(--color-very-dark);
+    background-color: var(--color-very-light);
+
+    &::placeholder {
+      color: var(--color-graysh);
+    }
+
+    &[type='number'] {
+      text-align: right;
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+    }
+    &:focus {
+      outline-color: var(--color-primary);
+    }
+  }
+  &__tag {
+    display: block;
+    position: relative;
+    padding: 1rem;
+    margin: 0;
+    width: 2rem;
+    height: 2rem;
+  }
+}
+.error {
+  border-color: var(--color-error);
+}
+
+.bill {
+  background-image: url("@/assets/icons/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  background-position: 1rem 1rem;
+}
+
+.person {
+  background-image: url("@/assets/icons/icon-person.svg");
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  background-position: 1rem 1rem;
+}

@@ -1,0 +1,17 @@
+.total {
+  min-width: 30rem;
+  display: flex;
+  flex-direction: column;
+  gap: 13rem;
+  padding-block-start: 6rem;
+  padding-block-end: 4.2rem;
+  padding-inline: 3.6rem;
+  border-radius: var(--brad);
+  background-color: var(--color-very-dark);
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+}

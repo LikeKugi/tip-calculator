@@ -1,0 +1,11 @@
+.tipbox {
+  padding: 3rem;
+  display: flex;
+  gap: 3.6rem;
+  background-color: var(--color-white);
+  border-radius: var(--brad);
+
+  @media screen and (max-width: 930px){
+    flex-direction: column;
+  }
+}

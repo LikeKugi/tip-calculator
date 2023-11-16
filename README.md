@@ -98,11 +98,8 @@ you're still not completely comfortable with or techniques you found useful that
 
 - [fonts](https://blog.greenroots.info/3-quick-ways-to-add-fonts-to-your-react-app) - This helped me to import fonts in
   react app.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd
-  recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could
-come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [svg in input](https://stackoverflow.com/questions/40808493/how-to-add-a-svg-icon-within-an-input) - This is an amazing article which helped me to place icons like ::before. But i didn't do it <3
+- [hide buttons](https://stackoverflow.com/questions/3790935/can-i-hide-the-html5-number-input-s-spin-box) - This topic helped me to hide arrows in inputs
 
 ## Author
 
